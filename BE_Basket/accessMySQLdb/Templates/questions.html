@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for value in values %}
+
+{% include "questionTemplate.html" with tableValue=value.0 title=value.1 numberQuestion=value.2 %}
+
+{% endfor %}
+
+
+
+{% endblock %}
